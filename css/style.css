@@ -1,0 +1,158 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:#ff206e;
+
+}
+@font-face {
+    font-family: 'lora';
+    src: url(../webfonts/Lora/Lora-Italic-VariableFont_wght.ttf);
+}
+h2, h3, p {
+    font-family: 'lora';
+}
+header{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center center;
+}
+.icon{
+    margin: 0% 5px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+.header-content a{
+    text-decoration: none;
+    color: #09c;
+    font-size: larger;    
+}
+
+.title h3{
+    font-size: 90px;
+    letter-spacing: 15px;
+    color: rgb(227, 227, 227);
+}
+.title h2{
+    letter-spacing: 10px;
+}
+.about{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.About-us{
+    background-image: url(../images/light_dot.jpg);
+
+}
+
+.services{
+    background-image: url(../images/dark_dot.jpg);
+}
+
+.services .item h2{
+    position: relative;
+}
+.services .item h2::after{
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    top: 100%;
+    left: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #ff206e;
+}
+
+
+
+.About-us .about h2::after{
+    content: " |";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes typing {
+    0%{
+        content: " |";}
+    2%{
+        content: "A|";}
+    4%{
+        content: "A7|";}
+    8%{
+        content: "A7M|";}
+    12%{
+        content: "A7ME|";}
+    16%{
+        content: "A7MED|";}
+    20%{
+        content: "A7MED |";}
+    24%{
+        content: "A7MED R|";}
+    28%{
+        content: "A7MED RA|";}
+    32%{
+        content: "A7MED RAM|";}
+    36%{
+        content: "A7MED RAMA|";}
+    40%{
+        content: "A7MED RAMAD|";}
+    44%{
+        content: "A7MED RAMADA|";}
+    48%{
+        content: "A7MED RAMADAN|";}
+    52%{
+        content: "A7MED RAMADA|";}
+    54%{
+        content: "A7MED RAMAD|";}
+    58%{
+        content: "A7MED RAMA|";}
+    62%{
+        content: "A7MED RAM|";}
+    66%{
+        content: "A7MED RA|";}
+    70%{
+        content: "A7MED R|";}
+    74%{
+        content: "A7MED |";}
+    78%{
+        content: "A7MED|";}
+    82%{
+        content: "A7ME|";}
+    86%{
+        content: "A7M|";}
+    90%{
+        content: "A7|";}
+    94%{
+        content: "A|";}
+    97%{
+        content: "A|";}
+    100%{
+        content: "|";}
+}
+
+.feedback {
+    background-image: url(../images/light_dot.jpg);
+}
+
+.client-img {
+    width: 90px;
+    height: 90px;
+    border: rgb(190, 190, 190) 2px solid;
+    transform: translateY(50%);
+}
+
+.client-feedback{
+    border: rgb(204, 204, 204) 1px solid;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 50px;
+    text-indent: 0;
+}
